@@ -10,7 +10,7 @@ metadata:
   updated: "2025-07-18T10:30:00Z"
 
 # Default configuration inherited by all applications
-# These defaults can be overridden at the deployment level (compose/kubernetes/helm)
+# These defaults can be overridden at the deployment level (compose/kubernetes)
 defaults:
   # Default source repository for deployment files and configurations
   # When deployments don't specify their own git repository, they inherit these values
@@ -104,19 +104,6 @@ apps:
           kubernetes:
             # Path to Kubernetes manifest file relative to the source repository root
             path: "apps/node-red/kubernetes.yaml"
-
-          # Helm chart deployment option (for Helm-enabled Kubernetes clusters)
-          # This example shows external repository usage for Helm charts
-          # NOTE: ((PIAP_*)) placeholder interpolation for Helm charts is planned for a future release
-          helm:
-            # External git repository containing the Helm chart (overrides defaults.source)
-            git: "github.com/your-org/helm-charts"
-            # Git branch or tag to use for the Helm chart (overrides defaults.source.ref)
-            ref: "v1.0.0"
-            # Path to the Helm chart within the repository (chart name)
-            path: "node-red"
-            # Chart name to use for installation - specific to Helm
-            chart: "node-red"
 
         # Runtime configuration system for device-specific and location-specific settings
         #

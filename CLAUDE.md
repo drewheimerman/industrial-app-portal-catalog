@@ -37,8 +37,7 @@ apps
             ├── version_requirement
             ├── deployment
             │   ├── compose
-            │   ├── kubernetes
-            │   └── helm
+            │   └── kubernetes
             ├── configuration
             │   ├── files
             │   └── variables
@@ -80,7 +79,7 @@ Example in config template (apps/node-red/prod/mqtt.json):
 Deployment files can be sourced from git repositories:
 - Global default defined in `defaults.source` (git + ref)
 - Inherited by all deployments unless overridden
-- Can be overridden at deployment level (compose/kubernetes/helm)
+- Can be overridden at deployment level (compose/kubernetes)
 - Example: `defaults.source.git: "github.com/your-org/edge-templates"`
 
 ### Configuration System
@@ -216,7 +215,7 @@ When modifying YAML files, ensure:
 1. Add entry to `catalog.yaml` under `apps:`
 2. Define metadata (name, description, versions, category, etc.)
 3. Create at least one variant (typically `prod`)
-4. Define deployment options (compose/kubernetes/helm)
+4. Define deployment options (compose/kubernetes)
 5. Create deployment files in `apps/[app-id]/`
 6. (Optional) Add `configuration` section if the app needs config files or variables
 7. Create template files in `apps/[app-id]/` and define them inline under `configuration.files[].templates`
@@ -269,7 +268,7 @@ PIAP uses the standard Docker Compose override file pattern to inject runtime co
 - Easy debugging: inspect override file to see what PIAP added
 - Clear separation: base config in git, runtime config in override
 
-**Note:** This pattern is currently used for Docker Compose deployments. Kubernetes and Helm will use platform-native patterns (ConfigMaps, Secrets, Values) when support is added.
+**Note:** This pattern is currently used for Docker Compose deployments. Kubernetes will use platform-native patterns (ConfigMaps, Secrets) when support is added.
 
 ## Testing Changes
 
