@@ -56,11 +56,6 @@ apps:
             path: "apps/node-red/docker-compose.yml"
           kubernetes:
             path: "apps/node-red/kubernetes.yaml"
-          helm:
-            git: "github.com/your-org/helm-charts"
-            ref: "v1.0.0"
-            path: "node-red"
-            chart: "node-red"
         configuration:
           files:
             - label: "Application Configuration"
