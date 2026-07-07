@@ -462,5 +462,4 @@ apps:
             path: "apps/sorba-sde/production/docker-compose.yml"
     requirements:
       minMemory: "8GB"
-      minCPU: "4"
       architecture: ["amd64"]
