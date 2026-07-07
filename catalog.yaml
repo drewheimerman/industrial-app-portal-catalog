@@ -4,7 +4,7 @@ metadata:
 
 defaults:
   source:
-    git: "github.com/portainer/industrial-app-portal-catalog"
+    git: "github.com/drewheimerman/industrial-app-portal-catalog"
     ref: "main"
 
 apps:
