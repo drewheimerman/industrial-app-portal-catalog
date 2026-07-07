@@ -459,7 +459,7 @@ apps:
       - label: "Production"
         deployment:
           compose:
-            path: "apps/sorba-sde/production/docker-compose.yml"
+            path: "edge/sorba-sde/production/docker-compose.yml"
     requirements:
       minMemory: "8GB"
-      architecture: ["amd64"]
+      architecture: ["amd64", "arm64"]
