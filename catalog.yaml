@@ -216,6 +216,8 @@ apps:
       category: "industrial-automation"
       icon: "https://www.gravatar.com/avatar/ee83d0294a89e3dfabd7fcf304db4537?s=120&r=g&d=404"
       tags: ["edge", "gateway", "analytics", "machine-learning"]
+      screenshots:
+        - "https://portainer-io-assets.sfo2.cdn.digitaloceanspaces.com/industrial-app-portal/screenshots/cedalo-mosquitto-mc-1.png"
       documentation: "https://sorba.com/"
     variants:
       - label: "Production"
