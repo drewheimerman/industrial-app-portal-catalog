@@ -1,6 +1,6 @@
 services:
   sde:
-    image: sorbotics/sorba-sde:latest
+    image: sorbotics/sorba-sde:((PIAP_IMAGE_VERSION))
     container_name: my-sde
     cap_add:
       - NET_ADMIN
