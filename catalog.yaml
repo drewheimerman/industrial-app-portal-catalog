@@ -222,6 +222,11 @@ apps:
         deployment:
           compose:
             path: "apps/sorba-sde/production/docker-compose.yml"
+        configuration:
+          variables:
+            - name: "CONTAINER_NAME"
+              label: "Name"
+              default: "my-sde"
     requirements:
       minMemory: "8GB"
       architecture: ["amd64", "arm64"]
