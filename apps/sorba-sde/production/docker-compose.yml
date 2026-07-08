@@ -1,7 +1,7 @@
 services:
   sde:
     image: "sorbotics/sorba-sde:((PIAP_IMAGE_VERSION))"
-    container_name: "((CONTAINER_NAME))"
+    container_name: "((PIAP_CONTAINER_NAME))"
     cap_add:
       - NET_ADMIN
     restart: always
