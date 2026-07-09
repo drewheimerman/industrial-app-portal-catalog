@@ -217,7 +217,10 @@ apps:
       icon: "https://www.gravatar.com/avatar/ee83d0294a89e3dfabd7fcf304db4537?s=120&r=g&d=404"
       tags: ["edge", "gateway", "analytics", "machine-learning"]
       screenshots:
-        - "https://github.com/drewheimerman/industrial-app-portal-catalog/blob/2f22cbbd29ab62e8343d0e25ebf49fedb1043a21/apps/sorba-sde/assets/Sorba_Screenshot_1.png"
+        - "https://downloads.portainer.io/assets/sorba/sorba_connect.png"
+        - "https://downloads.portainer.io/assets/sorba/sorba_choose.png"
+        - "https://downloads.portainer.io/assets/sorba/sorba_deploy.png"
+        - "https://downloads.portainer.io/assets/sorba/sorba_scale.png"
       documentation: "https://sorba.com/"
     variants:
       - label: "Production"
